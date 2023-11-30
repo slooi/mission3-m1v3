@@ -3,7 +3,7 @@ name: Build and deploy Node.js app to Azure Web App - azureTestUploadInstance
 
 on:
     push:
-        branches: [master, main]
+        branches: [master, main, va]
     workflow_dispatch:
 
 jobs:
