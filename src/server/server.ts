@@ -1,10 +1,14 @@
-import express from "express"
-import path from "path"
-import {r_api} from "./route.js"
-const app = express()
+import express from "express";
+import path from "path";
+import { r_api } from "./route.js";
+const app = express();
 
-app.use(express.static(path.join(process.cwd(),"dist")))
+app.use(express.static(path.join(process.cwd(), "dist")));
 
-app.use(r_api)
+app.get("/", (req, res) => {
+	res.send("<h1>root route</h1>");
+});
 
-export default app
+app.use(r_api);
+
+export default app;
