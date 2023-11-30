@@ -7,7 +7,8 @@
 		"start": "./node_modules/typescript/bin/tsc && node ./dist/entry.js",
 		"build": "./node_modules/typescript/bin/tsc",
 		"dev": "tsx ./src/entry",
-		"test": "./node_modules/typescript/bin/tsc && jest ./dist/tests --coverage"
+		"test": "./node_modules/typescript/bin/tsc && jest ./dist/tests --coverage",
+		"local": "tsc && node ./dist/entry.js"
 	},
 	"dependencies": {
 		"express": "^4.18.2",
