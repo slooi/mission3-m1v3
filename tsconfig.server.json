@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		// "target": "ES2020", // OUTPUT javascript SYNTAX with features from ESXXXX EG: output optional chaining operators & async/await syntax instead of embedding a polyfill.
+		"module": "ES2020", // what type of MODULE SYNTAX is supported for OUTPUT? // using ES2020 instead of Commojs as using import.meta
+		"esModuleInterop": true,
+		"outDir": "./dist_server",
+		"rootDir": "./src/server",
+		// "lib": ["ES2020"], // OUTPUT can use functions and properties introduced in ES2020 or earlier
+
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
+		//allowSyntheticDefaultImports
+	},
+	"include": ["./src/server"],
+	"exclude": ["node_modules","src/client"]
+}
