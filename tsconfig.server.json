@@ -11,6 +11,11 @@
 		"forceConsistentCasingInFileNames": true,
 		"skipLibCheck": true,
 		//allowSyntheticDefaultImports
+		//         "module": "ES6", // what type of MODULE SYNTAX is supported for OUTPUT? // using ES2020 instead of Commojs as using import.meta
+        // "esModuleInterop": true,
+        // "outDir": "./dist_server",
+        // "rootDir": "./src/server",
+        // "moduleResolution": "Bundler",
 	},
 	"include": ["./src/server"],
 	"exclude": ["node_modules","src/client"]
